@@ -24,14 +24,17 @@ function fishBtnClicked() {
   let character = charSelect.value;
 
   // Catch fish based on character
-  if (character === 'steve') {
+  if (character === "steve") {
     // STEVE: Cod 70%, Salmon 20%, Tropical 5%, Puffer 5%
-    catchFish(0.7, 0.7, 0.05)
-  } else if (character === 'alex') {
+    catchFish(0.7, 0.7, 0.05);
+  } else (character === "alex") 
     // ALEX: Cod 10%, Salmon 10%, Tropical 30%, Puffer 50%
-    catchFish(0.1, 0.8, 0.3)
+    catchFish(0.1, 0.8, 0.3);
+  } if (character === "villager") {
+// Villager: Cod: 25%, Salmon: 25%, Tropical, 25%, Puffer 25%
+catchFish(0.25, 0.25, 0.25, 0.25)
   }
-}
+
 
 function catchFish(p1, p2, p3,) {
   let randNum = Math.random();
